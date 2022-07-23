@@ -1,0 +1,7 @@
+{
+  "projects": [
+    { "id": "1", "name": "Create new homepage banner" },
+    { "id": "2", "name": "Make markting email" },
+    { "id": "3", "name": "Make a new website" }
+  ]
+}

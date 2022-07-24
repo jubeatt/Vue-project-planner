@@ -1,8 +1,8 @@
 <template>
   <div class="home">
     <Filter :filter="filter" :onFilter="onFilter" />
-    <div v-if="projects && projects.length">
-      <template v-for="project of getProjects(projects)" :key="project.id">
+    <div v-if="filteredProject && filteredProject.length">
+      <template v-for="project of filteredProject" :key="project.id">
         <SingleProject
           :project="project"
           :onDelete="onDelete"
@@ -60,13 +60,17 @@ export default {
     },
     onFilter(type) {
       this.filter = type
-    },
-    getProjects() {
-      return this.projects.filter((project) => {
-        if (this.filter === 'all') return true
-        if (this.filter === 'completed') return project.isCompleted
-        if (this.filter === 'onGoing') return !project.isCompleted
-      })
+    }
+  },
+  computed: {
+    filteredProject() {
+      return this.projects
+        ? this.projects.filter((project) => {
+            if (this.filter === 'all') return true
+            if (this.filter === 'completed') return project.isCompleted
+            if (this.filter === 'onGoing') return !project.isCompleted
+          })
+        : null
     }
   },
   watch: {

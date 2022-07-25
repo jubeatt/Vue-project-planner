@@ -54,7 +54,8 @@ export default {
           {
             id: Date.now(),
             title: this.title,
-            detail: this.detail
+            detail: this.detail,
+            isCompleted: false
           },
           ...record
         ]

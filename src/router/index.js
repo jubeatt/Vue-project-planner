@@ -1,7 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Form from '../components/Form.vue'
-import Test from '../components/Test.vue'
 
 const routes = [
   {
@@ -10,7 +9,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/add-new-project',
+    path: '/add',
     name: 'AddProject',
     component: Form
   },

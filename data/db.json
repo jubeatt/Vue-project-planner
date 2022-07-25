@@ -1,0 +1,34 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Create new homepage banner",
+      "details": "Lorem ipsum",
+      "complete": true
+    },
+    {
+      "id": 2,
+      "title": "Make marketing email !!!!",
+      "details": "Lorem ipsum Lorem ipsum",
+      "complete": false
+    },
+    {
+      "title": "Design a website",
+      "details": "lorem ipsum",
+      "complete": true,
+      "id": 3
+    },
+    {
+      "title": "E-Shop Website",
+      "details": "lorem ipsum",
+      "complete": true,
+      "id": 4
+    },
+    {
+      "title": "Vue Tutorial",
+      "details": "Lorem ipsum",
+      "complete": false,
+      "id": 5
+    }
+  ]
+}

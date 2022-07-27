@@ -1,4 +1,4 @@
-# project-project-planner
+# Vue-project-planner
 
 來自 [Build Web Apps with Vue JS 3 & Firebase](https://www.udemy.com/course/build-web-apps-with-vuejs-firebase/) 的其中一項專案。主要拿來練習 Vue 的基礎應用。
 

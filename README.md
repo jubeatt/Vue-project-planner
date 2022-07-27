@@ -4,8 +4,8 @@
 
 這份專案有兩個分支，分別為：
 
-master（自己想的版本）
-review（課程解答的版本）
+- master（自己想的版本）
+- review（課程解答的版本）
 
 網站連結：https://jubeatt.github.io/Vue-project-planner
 

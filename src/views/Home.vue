@@ -24,7 +24,12 @@ export default {
   mounted() {
     try {
       const record = JSON.parse(localStorage.getItem('projects'))
-      this.projects = record
+      if (!record) {
+        localStorage.setItem('projects', '[]')
+        this.projects = []
+      } else {
+        this.projects = record
+      }
     } catch (error) {
       this.$notify({
         title: 'Error',
@@ -36,7 +41,7 @@ export default {
   },
   data() {
     return {
-      projects: null,
+      projects: [],
       filter: 'all'
     }
   },
